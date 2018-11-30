@@ -21,7 +21,7 @@ main = do
           mapM_ (\e -> do
                     putStrLn "===="
                     TIO.putStrLn $ "URL: " <> HAR.Request.url (HAR.Entry.request e)
-                    putStrLn $ "time: " <> show (HAR.Entry.time e)
+                    putStrLn $ "Time: " <> show (HAR.Entry.time e)
                     putStrLn $ "Status: " <> show (HAR.Response.status $ HAR.Entry.response e)
                     putStrLn $ "BodySize: " <> show (HAR.Response.bodySize $ HAR.Entry.response e)
                     putStrLn $ "HeaderSize: " <> show (HAR.Response.headersSize $ HAR.Entry.response e)
