@@ -1,0 +1,20 @@
+name: harv
+version: 0.0.1
+github: apeyroux/harv
+author: Alexandre Peyroux
+maintainer: alex@px.io
+category: System
+license: BSD3
+description: HAR CLI Viewer
+
+executable:
+  # buildable: false
+  main: Main.hs
+  source-dirs: app
+  ghc-options: -Wall -threaded -rtsopts
+  dependencies:
+    - base >= 4.2 && < 5
+    - har
+    - aeson
+    - optparse-applicative
+    - text
